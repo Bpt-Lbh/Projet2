@@ -109,6 +109,22 @@ a:hover{
     margin-bottom: 5px;
 }
 
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergements-cards .cartes-textes {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 
 /****** Populaires ***********/
 .populaires {
