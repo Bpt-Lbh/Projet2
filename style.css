@@ -1,3 +1,4 @@
+`css
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -58,6 +59,11 @@ a {
     color: var(--main-bg-color)
 }
 
+a:hover{
+    color: #0065FC;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -75,6 +81,34 @@ a {
 .hebergements {
     width: 65%;
 }
+
+.hebergements-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards{
+    display: flex;
+}
+
+.hebergement-card img {
+    width: 33%;
+}
+
+.hebergement-card .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergement-card .card-subtitle {
+    margin: 0;
+}
+
+.hebergement-card .card-rating {
+    margin-bottom: 5px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -176,32 +210,20 @@ a {
     justify-content: flex-start;
     width: 61.09px;
     height: 19px;
-    background-color: aqua;
-     
-}
-.boutons {
-    display: flex;
-    justify-content: flex-end;
-    width: 244px;
-    height: 35px;
-    gap: 68px;
-    background-color: rgb(255, 0, 98);
 }
 
 .menu {
     display: flex;
-    justify-content: flex-start, space-around;
+    justify-content: center;
     align-items: flex-start;
     list-style-type: none;
     gap: 50px;
-    background-color: aqua;
-
+    align-items: center;
 }
 
 .conteneur-recherche{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
 }
 
 .boutons-filtres {
@@ -209,13 +231,22 @@ a {
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-start;
-    gap: 50px;
-    background-color: aqua;
+    gap: 20px;
 }
 
 .sous-sous-titres {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: aqua;
 }
+
+.filtres{
+    display: flex; 
+}
+
+.boutons-filtres li{
+    border: 2px solid rgb(234, 234, 234);
+    border-radius: 20px;
+    padding: 5px 9px;
+}
+
