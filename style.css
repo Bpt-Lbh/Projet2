@@ -94,6 +94,8 @@ a:hover{
 
 .hebergement-card img {
     width: 33%;
+    radius: 0px, 0px, 20px, 20px;
+    padding:20px, 19px, 20px, 19px;
 }
 
 .hebergement-card .card-title {
@@ -331,34 +333,37 @@ a:hover{
 /****** Footer ***********/
 
 .footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: #F2F2F2;
 }
 
-.link-footer{
+.footer-title-one .footer-title-two .footer-title-three{
     display: flex;
-}
-
-.footer-cards-title{
-    display: flex;
-    justify-content: space-between;
-    size: 18px;
-}
-
-.footer-content{
-    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-.footer-content-two{
+.footer-title-two {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-content-three{
+.footer-link-one {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer-link-two {
+    display: flex;
+    align-items: center;
 }
 
-.footer-content .footer-content-two .footer-content-three{
-    size: 16px;
+.footer-link-three {
+    display: flex;
+    align-items: flex-start;
 }
+
