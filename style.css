@@ -195,33 +195,131 @@ a:hover{
 
 
 
+/****** Activités ***********/
+
+.activites{
+    width: 100%;
+    
+}
+.activites-cartes{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.activites-cartes img{
+    width: 297.5px;
+    height: 439px;
+    radius: 20px;
+    border-top-left-radius:  20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    
+}
+
+.activites-cartes .card-activites{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content-activite{
+    padding:20px, 19px, 20px, 19px;
+    radius: 0px, 0px, 20px, 20px;
+    gap: 10px;
+    width: 297.5px;
+    height: 59px;
+}
+
+.activites-cards .card-title{
+    margin-top: 10px;
+    margin-bottom: 4px;
+    size: 16px;
+}
+
+.card-activites {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/****** Footer ***********/
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+}
+
+.footer-title-one .footer-title-two .footer-title-three{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-title-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link-one {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer-link-two {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link-three {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
 
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+}
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+        flex-direction: column;
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
+       
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        
     }
 
-    .populaires-cards a {
-        width: 30%;
+    .populaires-cards {
+        width: 90%;
+        height: 90%;
+
     }
 
     .populaires-cards .card-title {
@@ -231,7 +329,15 @@ a:hover{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+
+    .card-activites {
+        display: flex;
+        justify-content: space-around;    
+    }
+
+    .activites a{
+        width: 20%;
+    }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -287,83 +393,3 @@ a:hover{
     border-radius: 20px;
     padding: 5px 9px;
 }
-
-
-/****** Activités ***********/
-
-.activites{
-    width: 100%;
-    
-}
-.activites-cartes{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.activites-cartes img{
-    width: 297.5px;
-    height: 439px;
-    radius: 20px;
-    border-top-left-radius:  20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-    
-}
-
-.activites-cartes .card-activites{
-    display: flex;
-    flex-direction: column;
-}
-
-.card-content-activite{
-    padding:20px, 19px, 20px, 19px;
-    radius: 0px, 0px, 20px, 20px;
-    gap: 10px;
-    width: 297.5px;
-    height: 59px;
-}
-
-.activites-cards .card-title{
-    margin-top: 10px;
-    margin-bottom: 4px;
-    size: 16px;
-}
-
-/****** Footer ***********/
-
-.footer{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-direction: column;
-    background-color: #F2F2F2;
-}
-
-.footer-title-one .footer-title-two .footer-title-three{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.footer-title-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-link-one {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-.footer-link-two {
-    display: flex;
-    align-items: center;
-}
-
-.footer-link-three {
-    display: flex;
-    align-items: flex-start;
-}
-
