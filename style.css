@@ -71,6 +71,7 @@ a:hover {
 
 .boutons-filtres {
     font-weight: bold;
+    
 }
 
 
@@ -146,6 +147,7 @@ a:hover {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 .hebergements-cards-card article {
@@ -177,6 +179,7 @@ a:hover {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 .populaires-cards img {
@@ -337,12 +340,14 @@ a:hover {
     list-style-type: none;
     justify-content: flex-start;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .sous-sous-titres {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .filtres {
@@ -352,13 +357,43 @@ a:hover {
 .boutons-filtres li {
     border: 2px solid rgb(234, 234, 234);
     border-radius: 20px;
-    padding: 5px 9px;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
 }
 
+.boutons-filtres li:hover {
+  background-color: #DEEBFF;
+}
 .activites-cartes-card {
     width: 24%;
 }
 
+.fa-location-dot{
+    padding: 14px;
+    width: 20Px;
+    text-align: center;
+    border-radius: 12px 0 0 12px;
+}
+
+button{
+
+    border-radius: 0 12px 12px 0;
+    border: none;
+    background: #0065FC;
+    color: white;
+    width: 100px;
+
+}
+input{
+    border: 0.4px solid #F2F2F2;
+    width: 220px;
+}
+input::placeholder{
+    font-weight: 900;
+    color: black;
+    padding: 0 10px;
+}
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -455,7 +490,8 @@ a:hover {
     }       
     
     .filtres{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
     
     .hebergements-and-populaires{
@@ -516,6 +552,13 @@ a:hover {
 
     .card-subtitle{
         font-size: 0.9em; 
+    }
+    .boutons-filtres{
+        padding: 0;
+    }
+
+    .submit{
+        
     }
 
 }
