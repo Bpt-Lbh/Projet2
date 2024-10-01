@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -71,7 +74,7 @@ a:hover {
 
 .boutons-filtres {
     font-weight: bold;
-    
+
 }
 
 
@@ -229,7 +232,7 @@ a:hover {
 .activites-cartes img {
     width: 100%;
     height: 439px;
-   
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -302,7 +305,7 @@ a:hover {
     margin: 10px 0;
 }
 
-.footer-link-one .footer-link-two .footer-link-three{
+.footer-link-one .footer-link-two .footer-link-three {
     margin: 10px 0;
 }
 
@@ -363,20 +366,21 @@ a:hover {
 }
 
 .boutons-filtres li:hover {
-  background-color: #DEEBFF;
+    background-color: #DEEBFF;
 }
+
 .activites-cartes-card {
     width: 24%;
 }
 
-.fa-location-dot{
+.fa-location-dot {
     padding: 14px;
     width: 20Px;
     text-align: center;
     border-radius: 12px 0 0 12px;
 }
 
-button{
+button {
 
     border-radius: 0 12px 12px 0;
     border: none;
@@ -385,15 +389,19 @@ button{
     width: 100px;
 
 }
-input{
+
+input {
     border: 0.4px solid #F2F2F2;
     width: 220px;
 }
-input::placeholder{
+
+input::placeholder {
     font-weight: 900;
     color: black;
     padding: 0 10px;
 }
+
+
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -428,7 +436,7 @@ input::placeholder{
 
     }
 
-  
+
     .populaires-cards .card-title {
         font-size: 14px;
     }
@@ -449,100 +457,106 @@ input::placeholder{
     .main-container {
         padding: 0px 14px;
     }
-    .populaires-cards{
+
+    .populaires-cards {
         width: 100%;
     }
-    .populaires-cards-card{
+
+    .populaires-cards-card {
         width: 32%;
     }
 
-    .activites-cartes-card{
+    .activites-cartes-card {
         width: 24%;
     }
 
-    .card-activites{
+    .card-activites {
         width: 100%;
-    
+
         /* height: 280px; */
     }
-    .activites-cartes-card .card-activites img{
+
+    .activites-cartes-card .card-activites img {
         width: 100%;
         height: 280px;
     }
+
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    .header{
+
+
+
+    .header {
         flex-direction: column;
     }
 
-    .main-container{
-        padding: 10 10;
-    }
 
-    .logo{   
+    .logo {
         margin: 15px 0;
         display: flex;
         justify-content: center;
         width: 100%;
-    }       
-    
-    .filtres{
+    }
+
+    .filtres {
         display: flex;
         flex-direction: column;
     }
-    
-    .hebergements-and-populaires{
-    display: flex;
-    flex-direction: column-reverse;
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    .hebergements-cards{
+    .hebergements-cards {
         flex-direction: column;
     }
 
-    .hebergements-cards-card{
+    .hebergements-cards-card {
         width: 100%;
         margin: 10px 0;
     }
 
-    .hebergements-cards{
+    .hebergements-cards {
         margin: 0;
     }
 
-    .populaires-cards{
+    .populaires-cards {
         flex-direction: column;
     }
 
-    .populaires-cards-card{
+    .populaires-cards-card {
         width: 100%;
     }
 
 
-    .activites-cartes{
+    .activites-cartes {
         flex-direction: column;
     }
 
-    .activites-cartes-card, .card-activites{
+    .activites-cartes-card,
+    .card-activites {
         width: 100%;
     }
-    
+
     .section-title {
         font-size: 1.1em;
     }
-    
-    .footer{
+
+    .footer {
         flex-direction: column;
         padding: 0 0 0 0px;
     }
 
-    .footer-titres{
+    .footer-titres {
         font-size: 1em;
     }
 
-    .footer-content{
+    .footer-content {
         font-size: 0.8em
     }
 
@@ -550,15 +564,97 @@ input::placeholder{
         font-size: 1em;
     }
 
-    .card-subtitle{
-        font-size: 0.9em; 
+    .card-subtitle {
+        font-size: 0.9em;
     }
-    .boutons-filtres{
+
+    .boutons-filtres {
         padding: 0;
     }
 
-    .submit{
-        
+
+
+}
+
+
+
+#btnMobile {
+    display: none;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    #btnMobile {
+        display: block;
+    }
+
+    #btnDesktop {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        gap: 0;
+    }
+
+    nav ul li {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    nav ul li:hover {
+        border-bottom: 1px solid red;
     }
 
 }
+
+
+@media (min-width: 768px) {
+    #btnMobile {
+        display: none;
+    }
+
+    #btnDesktop {
+        display: block;
+    }
+
+
+}
+
+.infos{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.information{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+    width: 26px;
+    
+}
+.information i{
+    width: 6px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+message.txt
+10 Ko
