@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: revert;
     padding: 0;
     box-sizing: border-box;
 }
@@ -43,6 +43,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    margin-left: 13px;
 }
 
 .card {
@@ -77,6 +78,11 @@ a:hover {
 
 }
 
+.afficher-plus {
+    font-weight: bold;
+    margin-left: 13px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -100,11 +106,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .hebergements-cards {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .hebergement-card img {
@@ -220,6 +228,7 @@ a:hover {
 
 .activites {
     width: 100%;
+    margin-bottom: 50px;
 
 }
 
@@ -351,6 +360,7 @@ a:hover {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-right: 20px;
 }
 
 .filtres {
@@ -628,6 +638,10 @@ input::placeholder {
 
     #btnDesktop {
         display: block;
+        width: auto;
+        padding: 15px; 
+        font-weight: bold;
+    
     }
 
 
@@ -637,6 +651,7 @@ input::placeholder {
     display: flex;
     gap: 10px;
     align-items: center;
+    margin: 20px;
 }
 
 .information{
@@ -655,6 +670,5 @@ input::placeholder {
     height: 16px;
     margin: 0;
     padding: 0;
+
 }
-message.txt
-10 Ko
