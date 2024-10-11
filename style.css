@@ -255,17 +255,19 @@ a:hover {
 }
 
 .card-content-activite {
-    padding: 20px, 19px, 20px, 19px;
-    border-radius: 0px, 0px, 20px, 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 0px 0px 20px 20px;
     gap: 10px;
-    width: 297.5px;
     height: 59px;
+
 }
 
 .activites-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-    size: 16px;
+    
 }
 
 .card-activites {
@@ -566,7 +568,6 @@ input::placeholder {
     }
 
    
-    
 
 }
 
@@ -726,6 +727,8 @@ input::placeholder {
     background: white !important;
  }
  
-
+ .sous-sous-titres{
+    margin: 8px 0;
+}
     
 }
