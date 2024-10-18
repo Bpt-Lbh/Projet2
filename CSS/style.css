@@ -432,7 +432,7 @@ input::placeholder {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 20px;
 
     }
 
@@ -461,6 +461,11 @@ input::placeholder {
     .card-activites {
         display: flex;
         justify-content: space-around;
+    }
+
+    .filtres {
+    flex-direction: column;
+    padding-top: 20px;
     }
 
     /* .activites a {
